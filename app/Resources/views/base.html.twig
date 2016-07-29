@@ -8,7 +8,7 @@
         {% block stylesheets %}
             <!-- Materialize CSS -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-            <link rel="stylesheet" href="{{ asset('bundles/user/style.css') }}">
+            <link rel="stylesheet" href="{{ asset('bundles/user/css/style.css') }}">
         {% endblock %}
     </head>
     <body>
@@ -25,6 +25,9 @@
 
             <!-- Materialize JavaScript -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+            <!-- Main JS -->
+            <script src="{{ asset('bundles/user/js/main.js') }}"></script>
 
         {% endblock %}
     </body>

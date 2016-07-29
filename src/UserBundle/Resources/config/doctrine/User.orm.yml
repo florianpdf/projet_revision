@@ -8,3 +8,39 @@ UserBundle\Entity\User:
             type: integer
             generator:
                 strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+            nullable: false
+        prenom:
+            type: string
+            length: 255
+            nullable: false
+        sexe:
+            type: string
+            length: 6
+            nullable: false
+        photo:
+            type: string
+            length: 255
+            nullable: true
+        adresse_postale:
+            type: string
+            length: 255
+            nullable: true
+        code_postal:
+            type: integer
+            nullable: true
+        ville:
+            type: string
+            length: 255
+            nullable: true
+        date_naissance:
+            type: string
+            length: 10
+            nullable: false
+        github:
+            type: string
+            length: 255
+            nullable: true
