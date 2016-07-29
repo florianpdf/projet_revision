@@ -1,0 +1,3 @@
+share_homepage:
+    path:     /
+    defaults: { _controller: ShareBundle:Default:index }

@@ -1,0 +1,88 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+
+    <div class="container">
+        <div class="row">
+            <div class="col m8 offset-m2">
+                <div class="row">
+                    <div class="input-field col s6">
+                        {{ form_label(form.nom) }}
+                        {{ form_widget(form.nom) }}
+                        {{ form_errors(form.nom) }}
+                    </div>
+                    <div class="input-field col s6">
+                        {{ form_label(form.prenom) }}
+                        {{ form_widget(form.prenom) }}
+                        {{ form_errors(form.prenom) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{ form_label(form.username) }}
+                        {{ form_widget(form.username) }}
+                        {{ form_errors(form.username) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{ form_label(form.email) }}
+                        {{ form_widget(form.email) }}
+                        {{ form_errors(form.email) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        {{ form_widget(form.sexe) }}
+                        {{ form_label(form.sexe) }}
+                        {{ form_errors(form.sexe) }}
+                    </div>
+                    <div class="input-field col s6">
+                        {{ form_label(form.date_naissance) }}
+                        {{ form_widget(form.date_naissance) }}
+                        {{ form_errors(form.date_naissance) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{ form_label(form.adresse_postale) }}
+                        {{ form_widget(form.adresse_postale) }}
+                        {{ form_errors(form.adresse_postale) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        {{ form_label(form.code_postal) }}
+                        {{ form_widget(form.code_postal) }}
+                        {{ form_errors(form.code_postal) }}
+                    </div>
+                    <div class="input-field col s6">
+                        {{ form_label(form.ville) }}
+                        {{ form_widget(form.ville) }}
+                        {{ form_errors(form.ville) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{ form_label(form.github) }}
+                        {{ form_widget(form.github) }}
+                        {{ form_errors(form.github) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{ form_label(form.plainPassword) }}
+                        {{ form_widget(form.plainPassword) }}
+                        {{ form_errors(form.plainPassword) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+    </div>
+{{ form_end(form) }}
