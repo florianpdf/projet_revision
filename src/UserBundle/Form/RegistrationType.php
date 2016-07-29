@@ -34,8 +34,10 @@ class RegistrationType extends AbstractType
             ->add('ville', 'text', array(
                 'required' => false
             ))
-            ->add('date_naissance', 'text', array(
+            ->add('date_naissance', DateType::class, array(
+                'widget' => 'single_text',
                 'attr' => ['class' => 'datepicker'],
+                'format' => 'dd/MM/yyyy'
             ))
             ->add('github', 'text', array(
                 'required' => false
