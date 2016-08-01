@@ -1,0 +1,8 @@
+/******** NAV BAR CUSTOM *******/
+
+.nav_top a:first-child, .nav_top a:first-child img{
+    height: 100%;
+}
+.nav_top a:first-child img{
+    height: 100%;
+}
